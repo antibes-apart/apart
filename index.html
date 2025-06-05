@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Charming 2BR Apartment Rental in Antibes | Book Direct & Save</title>
+    <title>Charming AC 2-bedroom apartment Antibes city center family, couples friendly</title>
     <meta name="description"
-        content="Book a cozy 2-bedroom air-conditioned apartment in Antibes city center. Ideal for families and couples. Close to beaches and old town. Enjoy direct booking benefits.">
+        content="Book a cozy 2-bedroom air-conditioned apartment in Antibes city center. Ideal for families and couples. Close to beaches, old town, train station and bus stations. Enjoy direct booking benefits.">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,10 +20,32 @@
         }
 
         header {
-            background: #007B8F;
+            background: url('images/antibes-header.png') center center / cover no-repeat;
             color: white;
-            padding: 40px 20px;
+            padding: 100px 20px;
             text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 300px;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 123, 143, 0.6);
+            /* overlay for readability */
+            z-index: 0;
+        }
+
+        header h1,
+        header p {
+            position: relative;
+            z-index: 1;
+            margin: 0.5em 0;
+            color: white;
         }
 
         .container {
@@ -112,8 +136,8 @@
 <body>
 
     <header>
-        <h1>Charming AC 2-Bedroom Apartment in Antibes</h1>
-        <p>City Center · Family & Couples Friendly · Book Direct & Save</p>
+        <h1>Charming AC 2-bedroom apartment Antibes city center family, couples friendly</h1>
+        <p>City Center · Family & Couples Friendly · Direct booking</p>
     </header>
 
     <div class="container">
@@ -125,41 +149,13 @@
                 France.
                 Perfect for couples and families, our apartment offers easy access to beaches, restaurants, and the
                 historic old town.
-                Book direct to enjoy better rates and a personal experience.
             </p>
         </section>
 
         <section class="section">
-            <h2>Seasonal Rates (Per Night)</h2>
-            <ul>
-                <li><strong>Christmas Holiday (20 Dec – 10 Jan):</strong> €150</li>
-                <li><strong>Rest of December (01–19):</strong> €110</li>
-                <li><strong>Rest of January (11–31):</strong> €110</li>
-                <li><strong>February:</strong> €120</li>
-                <li><strong>March:</strong> €120</li>
-                <li><strong>April:</strong> €140</li>
-                <li><strong>May:</strong> €150</li>
-                <li><strong>June:</strong> €160</li>
-                <li><strong>July:</strong> €180</li>
-                <li><strong>August:</strong> €200</li>
-                <li><strong>September:</strong> €150</li>
-                <li><strong>November:</strong> €110</li>
-            </ul>
-            <p><strong>Weekly discount:</strong> 10% off for stays of 7 nights or more.</p>
-            <p>Cleaning fee and city tax may apply.</p>
-        </section>
-
-        <section class="section contact">
-            <h2>Contact & Booking</h2>
-            <p>To check availability or ask any questions:</p>
-            <a href="https://wa.me/1234567890" target="_blank">📱 Message on WhatsApp</a>
-            <a href="mailto:your@email.com">📧 Send an Email</a>
-            <p><em>(Replace the contact details with your own.)</em></p>
-        </section>
-
-        <section class="section">
             <h2>Location: Antibes, France</h2>
-            <p>Located in a quiet neighborhood, walking distance from the Old Town and Mediterranean beaches.</p>
+            <p>Located in the city center, walking distance from the Old Town (10 min), Mediterranean beaches (15 min),
+                train station (10 min), bus station in front of the building.</p>
         </section>
 
         <section class="section">
@@ -168,8 +164,21 @@
                 <div class="carousel-images">
                     <img src="images/living0.jpg"
                         alt="Spacious living room in Antibes apartment with air conditioning" />
-                    <img src="images/bedroomgreen.jpg" alt="Cozy double bedroom in vacation apartment Antibes" />
+                    <img src="images/living1.jpg"
+                        alt="Spacious living room in Antibes apartment with air conditioning 1" />
+                    <img src="images/living2.jpg"
+                        alt="Spacious living room in Antibes apartment with air conditioning 2" />
+                    <img src="images/living3.jpg"
+                        alt="Spacious living room in Antibes apartment with air conditioning 3" />
+                    <img src="images/bedroomgreen.jpg" alt="Cozy green bedroom in vacation apartment Antibes" />
+                    <img src="images/bedroomyellow.jpg" alt="Cozy yellow bedroom in vacation apartment Antibes" />
+                    <img src="images/bedroomyellow2.jpg" alt="Cozy yellow bedroom in vacation apartment Antibes 2" />
                     <img src="images/kitchen1.jpg" alt="Fully equipped modern kitchen in Antibes holiday rental" />
+                    <img src="images/bathroom.jpg" alt="Modern bathroom with a cozy bathub" />
+                    <img src="images/bathroom1.jpg" alt="Modern bathroom with a cozy bathub and shower" />
+                    <img src="images/baclony.jpg" alt="Balcony perfect to take a coffee outside" />
+                    <img src="images/itineraries.jpg"
+                        alt="Itineraries ilustration with distancer to airport, train station" />
                 </div>
 
                 <button class="prev" aria-label="Previous image">&#10094;</button>
@@ -177,6 +186,34 @@
             </div>
         </section>
 
+        <section class="section">
+            <h2>Seasonal Rates (Per Night)</h2>
+            <ul>
+                <li><strong>Christmas Holiday (20 Dec – 10 Jan):</strong> €150</li>
+                <li><strong>January (11–31):</strong> €110</li>
+                <li><strong>February:</strong> €120</li>
+                <li><strong>March:</strong> €130</li>
+                <li><strong>April:</strong> €140</li>
+                <li><strong>May:</strong> €150</li>
+                <li><strong>June:</strong> €160</li>
+                <li><strong>July:</strong> €180</li>
+                <li><strong>August:</strong> €200</li>
+                <li><strong>September:</strong> €160</li>
+                <li><strong>October:</strong> €125</li>
+                <li><strong>November - 19 December:</strong> €110</li>
+            </ul>
+            <p><strong>Weekly discount:</strong> 10% off for stays of 7 nights or more.</p>
+            <p>Cleaning fee and city tax included.</p>
+        </section>
+
+        <section class="section contact">
+            <h2>Contact & Booking</h2>
+            <p><b>Address:</b> 3 rue Directeur Chaudon, Antibes, France</p>
+            <p>To check availability or ask any questions:</p>
+            <a href="https://wa.me/33627335434" target="_blank">📱 Message on WhatsApp</a>
+            <a href="mailto:antibescharmingapartment@gmail.com">📧 Send an Email</a>
+            <p><em>📞 Call Us: +33627335434</em></p>
+        </section>
     </div>
 
     <footer>
@@ -186,23 +223,23 @@
         const carouselImages = document.querySelector('.carousel-images');
         const slides = carouselImages.querySelectorAll('img');
         let currentIndex = 0;
-      
+
         function updateCarousel() {
-          carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+            carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-      
+
         document.querySelector('.prev').addEventListener('click', () => {
-          currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-          updateCarousel();
+            currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+            updateCarousel();
         });
-      
+
         document.querySelector('.next').addEventListener('click', () => {
-          currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
-          updateCarousel();
+            currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
         });
-      
+
         updateCarousel();
-      </script>
+    </script>
 
 </body>
 
