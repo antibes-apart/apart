@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: url('../images/antibes-header.png') center center / cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 123, 143, 0.6);
+    /* overlay for readability */
+    z-index: 0;
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 1;
+    margin: 0.5em 0;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1,
+h2 {
+    color: #007B8F;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.contact a {
+    display: block;
+    margin: 5px 0;
+    color: #007B8F;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+    font-size: 0.9em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    flex: 0 0 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0 12px;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Carousel end */
+/* Facilities */
+.facilities-section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0;
+  color: #333;
+  background: transparent;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.facilities-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #007B8F;
+}
+
+.facilities-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0 8px 0;
+  color: #007B8F;
+}
+
+/* Responsive multi-column layout */
+.facilities-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px 20px;
+}
+
+.facilities-section ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  gap: 6px;
+}
+
+/* Icon style */
+.facilities-section ul li i {
+  color: #333;
+  font-size: 14px;
+  width: 18px;
+  text-align: center;
+}
+
+/* Default icon if no icon class is present */
+.facilities-section ul li::before {
+  content: "\f00c"; /* Font Awesome check icon as default */
+  font-family: "Font Awesome 5 Free"; /* or 6, depending on your kit */
+  font-weight: 900;
+  margin-right: 6px;
+  color: #333;
+  display: inline-block;
+}
+
+/* Only show ::before if no actual <i> exists */
+.facilities-section ul li i + * {
+  margin-left: 0;
+}
+
+.facilities-section ul li i {
+  display: inline-block;
+}
+
+.facilities-section ul li:has(i) {
+  /* hide default icon if custom icon is used */
+  position: relative;
+}
+
+.facilities-section ul li:has(i)::before {
+  content: none;
+}
+
+/* Popular facilities (highlighted) */
+.popular-facilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 0;
+}
+
+.popular-facilities li {
+  color: #fff;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.popular-facilities li i {
+  color: #fff;
+  font-size: 14px;
+}
+
+
+/* end facilities */

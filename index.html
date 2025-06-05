@@ -9,128 +9,8 @@
         content="Book a cozy 2-bedroom air-conditioned apartment in Antibes city center. Ideal for families and couples. Close to beaches, old town, train station and bus stations. Enjoy direct booking benefits.">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background: #f9f9f9;
-            color: #333;
-        }
+    <link rel="stylesheet" href="styles/style.css" />
 
-        header {
-            background: url('images/antibes-header.png') center center / cover no-repeat;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 300px;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 123, 143, 0.6);
-            /* overlay for readability */
-            z-index: 0;
-        }
-
-        header h1,
-        header p {
-            position: relative;
-            z-index: 1;
-            margin: 0.5em 0;
-            color: white;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        h1,
-        h2 {
-            color: #007B8F;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .contact a {
-            display: block;
-            margin: 5px 0;
-            color: #007B8F;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #eee;
-            font-size: 0.9em;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        /* Carousel styles */
-        .carousel {
-            position: relative;
-            max-width: 100%;
-            margin: auto;
-            overflow: hidden;
-            height: auto;
-        }
-
-        .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-images img {
-            flex: 0 0 100%;
-            height: auto;
-            max-height: 500px;
-            object-fit: contain;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.4);
-            border: none;
-            color: white;
-            font-size: 2rem;
-            padding: 0 12px;
-            border-radius: 3px;
-            user-select: none;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-
-        /* Carousel end */
-    </style>
 </head>
 
 <body>
@@ -214,6 +94,142 @@
             <a href="mailto:antibescharmingapartment@gmail.com">📧 Send an Email</a>
             <p><em>📞 Call Us: +33627335434</em></p>
         </section>
+
+        <section class="facilities-section">
+            <h2>Facilities</h2>
+
+            <h3>Most popular facilities:</h3>
+            <ul class="popular-facilities">
+                <li><i class="fas fa-wifi"></i>Free WiFi</li>
+                <li><i class="fas fa-users"></i>Family rooms</li>
+                <li><i class="fas fa-smoking-ban"></i>Non-smoking rooms</li>
+            </ul>
+
+            <h3>Parking:</h3>
+            <p><i class="fas fa-parking"></i> No parking available.</p>
+
+            <h3>Internet:</h3>
+            <p><i class="fas fa-wifi"></i> WiFi is available in all areas and is free of charge.</p>
+
+            <h3>Kitchen:</h3>
+            <ul>
+                <li><i class="fas fa-child"></i>Children's high chair</li>
+                <li><i class="fas fa-table"></i>Dining table</li>
+                <li><i class="fas fa-mug-hot"></i>Coffee machine</li>
+                <li><i class="fas fa-broom"></i>Cleaning products</li>
+                <li><i class="fas fa-bread-slice"></i>Toaster</li>
+                <li><i class="fas fa-fire"></i>Stovetop</li>
+                <li><i class="fas fa-fire-alt"></i>Oven</li>
+                <li><i class="fas fa-utensils"></i>Kitchenware</li>
+                <li><i class="fas fa-mug-hot"></i>Electric kettle</li>
+                <li><i class="fas fa-home"></i>Kitchen</li>
+                <li><i class="fas fa-tshirt"></i>Washing machine</li>
+                <li><i class="fas fa-box-open"></i>Dishwasher</li>
+                <li><i class="fas fa-microchip"></i>Microwave</li>
+                <li><i class="fas fa-ice-cream"></i>Refrigerator</li>
+            </ul>
+
+            <h3>Bedroom:</h3>
+            <ul>
+                <li><i class="fas fa-bed"></i>Linens</li>
+                <li><i class="fas fa-box"></i>Wardrobe or closet</li>
+            </ul>
+
+            <h3>Bathroom:</h3>
+            <ul>
+                <li><i class="fas fa-toilet-paper"></i>Toilet paper</li>
+                <li><i class="fas fa-ribbon"></i>Towels</li>
+                <li><i class="fas fa-bath"></i>Guest bathroom</li>
+                <li><i class="fas fa-shower"></i>Bathtub or shower</li>
+                <li><i class="fas fa-bath"></i>Private Bathroom</li>
+                <li><i class="fas fa-toilet"></i>Toilet</li>
+                <li><i class="fas fa-leaf"></i>Free toiletries</li>
+                <li><i class="fas fa-wind"></i>Hairdryer</li>
+                <li><i class="fas fa-bath"></i>Bathtub</li>
+                <li><i class="fas fa-shower"></i>Shower</li>
+            </ul>
+
+            <h3>Living Area:</h3>
+            <ul>
+                <li><i class="fas fa-utensils"></i>Dining area</li>
+                <li><i class="fas fa-couch"></i>Sofa</li>
+                <li><i class="fas fa-chair"></i>Sitting area</li>
+                <li><i class="fas fa-pen-fancy"></i>Desk</li>
+            </ul>
+
+            <h3>Media &amp; Technology:</h3>
+            <ul>
+                <li><i class="fas fa-tv"></i>Flat-screen TV</li>
+                <li><i class="fas fa-tv"></i>Cable channels</li>
+                <li><i class="fas fa-tv"></i>TV</li>
+            </ul>
+
+            <h3>Room Amenities:</h3>
+            <ul>
+                <li><i class="fas fa-plug"></i>Socket near the bed</li>
+                <li><i class="fas fa-tshirt"></i>Drying rack for clothing</li>
+                <li><i class="fas fa-tree"></i>Hardwood or parquet floors</li>
+                <li><i class="fas fa-th-large"></i>Tile/Marble floor</li>
+                <li><i class="fas fa-fan"></i>Fan</li>
+                <li><i class="fas fa-iron"></i>Ironing facilities</li>
+                <li><i class="fas fa-iron"></i>Iron</li>
+            </ul>
+
+            <h3>Accessibility:</h3>
+            <p><i class="fas fa-wheelchair"></i> Upper floors accessible by elevator</p>
+
+            <h3>Outdoors:</h3>
+            <ul>
+                <li><i class="fas fa-chair"></i>Outdoor furniture</li>
+                <li><i class="fas fa-city"></i>Balcony</li>
+            </ul>
+
+            <h3>Food &amp; Drink:</h3>
+            <p><i class="fas fa-mug-hot"></i> Tea/Coffee maker</p>
+
+            <h3>Building Characteristics:</h3>
+            <p><i class="fas fa-building"></i> Private apartment in building</p>
+
+            <h3>Front Desk Services:</h3>
+            <ul>
+                <li><i class="fas fa-file-invoice"></i>Invoice provided</li>
+                <li><i class="fas fa-door-open"></i>Private check-in/out</li>
+                <li><i class="fas fa-stopwatch"></i>Express check-in/out</li>
+            </ul>
+
+            <h3>Entertainment &amp; Family Services:</h3>
+            <ul>
+                <li><i class="fas fa-puzzle-piece"></i>Board games/Puzzles</li>
+                <li><i class="fas fa-book"></i>Books, DVDs or music for children</li>
+                <li><i class="fas fa-puzzle-piece"></i>Board games/puzzles</li>
+            </ul>
+
+            <h3>Miscellaneous:</h3>
+            <ul>
+                <li><i class="fas fa-snowflake"></i>Air conditioning</li>
+                <li><i class="fas fa-smoking-ban"></i>Smoke-free property</li>
+                <li><i class="fas fa-thermometer-half"></i>Heating</li>
+                <li><i class="fas fa-elevator"></i>Elevator</li>
+                <li><i class="fas fa-users"></i>Family rooms</li>
+                <li><i class="fas fa-smoking-ban"></i>Non-smoking rooms</li>
+            </ul>
+
+            <h3>Safety &amp; Security:</h3>
+            <ul>
+                <li><i class="fas fa-fire-extinguisher"></i>Fire extinguishers</li>
+                <li><i class="fas fa-smog"></i>Smoke alarms</li>
+                <li><i class="fas fa-radiation-alt"></i>Carbon monoxide detector</li>
+            </ul>
+
+            <h3>Languages Spoken:</h3>
+            <ul>
+                <li><i class="fas fa-language"></i>English</li>
+                <li><i class="fas fa-language"></i>Spanish</li>
+                <li><i class="fas fa-language"></i>French</li>
+            </ul>
+        </section>
+
+
     </div>
 
     <footer>
