@@ -23,7 +23,7 @@ header::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 123, 143, 0.6);
+    /* background: rgba(0, 123, 143, 0.6); */
     /* overlay for readability */
     z-index: 0;
 }
